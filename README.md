@@ -33,6 +33,11 @@ To install `search-panel` run `ppm install asiloisad/pulsar-search-panel` to ins
 - Option to clean editors on panel hide.
 - Explicit glob patterns in path filter (no magic auto-expansion).
 - "Search in Folder" escapes special characters and appends `/**`.
+- "Use selection as replace pattern" no longer escapes regex characters.
+
+## Note on themes
+
+Since `search-panel` uses different CSS classes (`.search-panel`, `.search-panel-project`) than the built-in `find-and-replace` (`.find-and-replace`, `.project-find`), some themes may not apply their custom styles to the search panel. If the panel looks unstyled, the theme needs to add the new selectors alongside the existing ones.
 
 ## Contributing
 

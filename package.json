@@ -2,7 +2,7 @@
   "name": "search-panel",
   "main": "./lib/find",
   "description": "Find and replace in buffers and across the project",
-  "version": "0.219.8",
+  "version": "0.0.0",
   "license": "MIT",
   "activationCommands": {
     "atom-workspace": [
@@ -53,13 +53,13 @@
   },
   "providedServices": {
     "find-and-replace": {
-      "description": "Pulsar's bundled search-panel package",
+      "description": "Backward-compatible service for find-and-replace consumers",
       "versions": {
-        "0.0.1": "provideService"
+        "0.0.1": "provideLegacyService"
       }
     },
     "search-panel": {
-      "description": "Pulsar's bundled search-panel package",
+      "description": "Search panel service with find options, panel controls, and search triggers",
       "versions": {
         "0.0.1": "provideService"
       }

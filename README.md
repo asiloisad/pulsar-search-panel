@@ -35,6 +35,71 @@ To install `search-panel` run `ppm install asiloisad/pulsar-search-panel` to ins
 - "Search in Folder" escapes special characters and appends `/**`.
 - "Use selection as replace pattern" no longer escapes regex characters.
 
+## Provided Service `search-panel`
+
+Allows other packages to access find options, control panel visibility, and trigger searches programmatically.
+
+In your `package.json`:
+
+```json
+{
+  "consumedServices": {
+    "search-panel": {
+      "versions": {
+        "0.0.1": "consumeSearchPanel"
+      }
+    }
+  }
+}
+```
+
+In your main module:
+
+```javascript
+module.exports = {
+  consumeSearchPanel(searchPanel) {
+    // Access find options
+    const options = searchPanel.getFindOptions();
+    searchPanel.onDidChangeFindOptions((changed) => {
+      // changed: { useRegex, caseSensitive, wholeWord, ... }
+    });
+
+    // Control panel visibility
+    searchPanel.showFind();
+    searchPanel.showReplace();
+    searchPanel.showProjectFind();
+    searchPanel.hideFind();
+    searchPanel.hideProjectFind();
+    searchPanel.isFindVisible();
+    searchPanel.isProjectFindVisible();
+
+    // Trigger searches
+    searchPanel.search('pattern', { useRegex: true });
+    searchPanel.projectSearch('pattern', 'src/**');
+
+    // Access results marker layer
+    const layer = searchPanel.resultsMarkerLayerForTextEditor(editor);
+  }
+}
+```
+
+- `getFindOptions()`: returns the `FindOptions` object with current search state (`useRegex`, `caseSensitive`, `wholeWord`, `inCurrentSelection`, `findPattern`, `replacePattern`, `pathsPattern`).
+- `onDidChangeFindOptions(callback)`: subscribe to option changes. Callback receives an object with changed keys.
+- `showFind()`: show the buffer find panel and focus the find editor.
+- `showReplace()`: show the buffer find panel and focus the replace editor.
+- `showProjectFind()`: show the project find panel and focus the find editor.
+- `hideFind()`: hide the buffer find panel.
+- `hideProjectFind()`: hide the project find panel.
+- `isFindVisible()`: returns `true` if the buffer find panel is visible.
+- `isProjectFindVisible()`: returns `true` if the project find panel is visible.
+- `onDidUpdate(callback)`: subscribe to buffer search result updates. Callback receives the current markers array.
+- `onDidChangeCurrentResult(callback)`: subscribe to current result marker changes.
+- `onDidChangeFindVisibility(callback)`: subscribe to buffer find panel visibility changes.
+- `onDidChangeProjectFindVisibility(callback)`: subscribe to project find panel visibility changes.
+- `search(findPattern, options)`: trigger a buffer search with the given pattern and options.
+- `projectSearch(findPattern, pathsPattern)`: trigger a project search with the given pattern and optional glob filter.
+- `resultsMarkerLayerForTextEditor(editor)`: returns the results marker layer for the given text editor.
+
 ## Note on themes
 
 Since `search-panel` uses different CSS classes (`.search-panel`, `.search-panel-project`) than the built-in `find-and-replace` (`.find-and-replace`, `.project-find`), some themes may not apply their custom styles to the search panel. If the panel looks unstyled, the theme needs to add the new selectors alongside the existing ones.

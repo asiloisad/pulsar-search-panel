@@ -102,7 +102,7 @@ module.exports = {
 
 ## Note on themes
 
-Since `search-panel` uses different CSS classes (`.search-panel`, `.search-panel-project`) than the built-in `find-and-replace` (`.find-and-replace`, `.project-find`), some themes may not apply their custom styles to the search panel. If the panel looks unstyled, the theme needs to add the new selectors alongside the existing ones.
+Since `search-panel` uses different CSS classes (`.search-panel`, `.search-panel-project`) than the built-in `find-and-replace` (`.find-and-replace`, `.project-find`), some themes may not apply their custom styles to the search panel. If the panel looks unstyled, the theme needs to add the new selectors alongside the existing ones. [one-day-ui](https://github.com/asiloisad/pulsar-one-day-ui) already includes support for `search-panel`.
 
 ## Contributing
 

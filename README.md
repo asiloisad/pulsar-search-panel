@@ -31,6 +31,8 @@ To install `search-panel` run `ppm install asiloisad/pulsar-search-panel` to ins
 - Reworked result view component.
 - Reduced dependencies.
 - Option to clean editors on panel hide.
+- Explicit glob patterns in path filter (no magic auto-expansion).
+- "Search in Folder" escapes special characters and appends `/**`.
 
 ## Contributing
 

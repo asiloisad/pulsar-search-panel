@@ -76,13 +76,13 @@ module.exports = {
     searchPanel.isProjectFindVisible();
 
     // Trigger searches
-    searchPanel.search('pattern', { useRegex: true });
-    searchPanel.projectSearch('pattern', 'src/**');
+    searchPanel.search("pattern", { useRegex: true });
+    searchPanel.projectSearch("pattern", "src/**");
 
     // Access results marker layer
     const layer = searchPanel.resultsMarkerLayerForTextEditor(editor);
-  }
-}
+  },
+};
 ```
 
 - `getFindOptions()`: returns the `FindOptions` object with current search state (`useRegex`, `caseSensitive`, `wholeWord`, `inCurrentSelection`, `findPattern`, `replacePattern`, `pathsPattern`).

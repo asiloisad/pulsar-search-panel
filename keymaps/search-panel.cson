@@ -1,88 +1,52 @@
-'.platform-darwin':
-  'cmd-F': 'search-panel:project-show'
-  'cmd-f': 'search-panel:show'
-  'cmd-alt-f': 'search-panel:show-replace'
+'atom-workspace':
+  'cmdorctrl-F': 'search-panel:project-show'
+  'cmdorctrl-f': 'search-panel:show'
+  'cmdorctrl-alt-f': 'search-panel:show-replace'
 
-'.platform-win32, .platform-linux':
-  'ctrl-F': 'search-panel:project-show'
-  'ctrl-f': 'search-panel:show'
-
-'.platform-darwin atom-text-editor':
-  'cmd-g': 'search-panel:find-next'
-  'cmd-G': 'search-panel:find-previous'
-  'cmd-f3': 'search-panel:find-next-selected'
-  'cmd-shift-f3': 'search-panel:find-previous-selected'
+'atom-text-editor':
+  'cmdorctrl-g': 'search-panel:find-next'
+  'cmdorctrl-G': 'search-panel:find-previous'
   'cmd-ctrl-g': 'search-panel:select-all'
-  'cmd-d': 'search-panel:select-next'
-  'cmd-alt-e': 'search-panel:replace-next'
-  'cmd-e': 'search-panel:use-selection-as-find-pattern'
-  'cmd-shift-e': 'search-panel:use-selection-as-replace-pattern'
-  'cmd-u': 'search-panel:select-undo'
-  'cmd-k cmd-d': 'search-panel:select-skip'
-
-'.platform-win32 atom-text-editor, .platform-linux atom-text-editor':
+  'cmdorctrl-alt-e': 'search-panel:replace-next'
   'f3': 'search-panel:find-next'
   'shift-f3': 'search-panel:find-previous'
-  'ctrl-f3': 'search-panel:find-next-selected'
-  'ctrl-shift-f3': 'search-panel:find-previous-selected'
   'alt-f3': 'search-panel:select-all'
-  'ctrl-d': 'search-panel:select-next'
-  'ctrl-e': 'search-panel:use-selection-as-find-pattern'
-  'ctrl-shift-e': 'search-panel:use-selection-as-replace-pattern'
-  'ctrl-u': 'search-panel:select-undo'
-  'ctrl-k ctrl-d': 'search-panel:select-skip'
+  'cmdorctrl-f3': 'search-panel:find-next-selected'
+  'cmdorctrl-shift-f3': 'search-panel:find-previous-selected'
+  'cmdorctrl-d': 'search-panel:select-next'
+  'cmdorctrl-e': 'search-panel:use-selection-as-find-pattern'
+  'cmdorctrl-shift-e': 'search-panel:use-selection-as-replace-pattern'
+  'cmdorctrl-u': 'search-panel:select-undo'
+  'cmdorctrl-k cmdorctrl-d': 'search-panel:select-skip'
 
-'.platform-darwin .search-panel':
+'.search-panel':
   'shift-enter': 'search-panel:show-previous'
-  'cmd-enter': 'search-panel:confirm'
+  'cmdorctrl-enter': 'search-panel:confirm'
   'alt-enter': 'search-panel:find-all'
-  'cmd-alt-/': 'search-panel:toggle-regex-option'
-  'cmd-alt-c': 'search-panel:toggle-case-option'
-  'cmd-alt-s': 'search-panel:toggle-selection-option'
-  'cmd-alt-w': 'search-panel:toggle-whole-word-option'
-
-'.platform-win32 .search-panel, .platform-linux .search-panel':
-  'shift-enter': 'search-panel:show-previous'
-  'ctrl-enter': 'search-panel:confirm'
-  'alt-enter': 'search-panel:find-all'
-  'ctrl-alt-/': 'search-panel:toggle-regex-option'
+  'cmdorctrl-alt-/': 'search-panel:toggle-regex-option'
+  'cmdorctrl-alt-c': 'search-panel:toggle-case-option'
+  'cmdorctrl-alt-s': 'search-panel:toggle-selection-option'
+  'cmdorctrl-alt-w': 'search-panel:toggle-whole-word-option'
   'ctrl-shift-c': 'search-panel:toggle-case-option'
 
-'.platform-darwin .search-panel-project':
-  'cmd-enter': 'search-panel:project-confirm'
-  'cmd-alt-/': 'search-panel:project-toggle-regex-option'
-  'cmd-alt-c': 'search-panel:project-toggle-case-option'
-  'cmd-alt-w': 'search-panel:project-toggle-whole-word-option'
-
-'.platform-win32 .search-panel-project, .platform-linux .search-panel-project':
-  'ctrl-enter': 'search-panel:project-confirm'
-  'ctrl-alt-/': 'search-panel:project-toggle-regex-option'
+'.search-panel-project':
+  'cmdorctrl-enter': 'search-panel:project-confirm'
+  'cmdorctrl-alt-/': 'search-panel:project-toggle-regex-option'
+  'cmdorctrl-alt-c': 'search-panel:project-toggle-case-option'
+  'cmdorctrl-alt-w': 'search-panel:project-toggle-whole-word-option'
   'ctrl-shift-c': 'search-panel:project-toggle-case-option'
 
 '.search-panel, .search-panel-project, .search-panel-project .results-view':
   'tab': 'search-panel:focus-next'
   'shift-tab': 'search-panel:focus-previous'
 
-'.platform-darwin .search-panel, .platform-darwin .search-panel-project':
-  'cmd-shift-x': 'search-panel:clear'
+'.search-panel, .search-panel-project':
+  'cmdorctrl-shift-x': 'search-panel:clear'
 
-'.platform-win32 .search-panel, .platform-win32 .search-panel-project, .platform-linux .search-panel, .platform-linux .search-panel-project':
-  'ctrl-shift-x': 'search-panel:clear'
-
-'.platform-darwin .search-panel .replace-container atom-text-editor':
-  'cmd-enter': 'search-panel:replace-all'
-'.platform-darwin .search-panel-project .replace-container atom-text-editor':
-  'cmd-enter': 'search-panel:project-replace-all'
-
-'.platform-win32 .search-panel .replace-container atom-text-editor':
-  'ctrl-enter': 'search-panel:replace-all'
-'.platform-win32 .search-panel-project .replace-container atom-text-editor':
-  'ctrl-enter': 'search-panel:project-replace-all'
-
-'.platform-linux .search-panel .replace-container atom-text-editor':
-  'ctrl-enter': 'search-panel:replace-all'
-'.platform-linux .search-panel-project .replace-container atom-text-editor':
-  'ctrl-enter': 'search-panel:project-replace-all'
+'.search-panel .replace-container atom-text-editor':
+  'cmdorctrl-enter': 'search-panel:replace-all'
+'.search-panel-project .replace-container atom-text-editor':
+  'cmdorctrl-enter': 'search-panel:project-replace-all'
 
 '.results-view':
   'home': 'core:move-to-top'

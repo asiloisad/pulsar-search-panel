@@ -29,7 +29,7 @@
   },
   "repository": "https://github.com/asiloisad/pulsar-search-panel",
   "engines": {
-    "atom": "*"
+    "atom": ">=1.132.0 <2.0.0"
   },
   "dependencies": {
     "etch": "0.9.3"

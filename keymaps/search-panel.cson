@@ -1,11 +1,11 @@
 'atom-workspace':
-  'cmdorctrl-F': 'search-panel:project-show'
+  'cmdorctrl-shift-f': 'search-panel:project-show'
   'cmdorctrl-f': 'search-panel:show'
   'cmdorctrl-alt-f': 'search-panel:show-replace'
 
 'atom-text-editor':
   'cmdorctrl-g': 'search-panel:find-next'
-  'cmdorctrl-G': 'search-panel:find-previous'
+  'cmdorctrl-shift-g': 'search-panel:find-previous'
   'cmd-ctrl-g': 'search-panel:select-all'
   'cmdorctrl-alt-e': 'search-panel:replace-next'
   'f3': 'search-panel:find-next'

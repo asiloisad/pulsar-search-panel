@@ -18,21 +18,21 @@ To install `search-panel` search for [search-panel](https://web.pulsar-edit.dev/
 
 **Note**: This package automatically disables the built-in `find-and-replace` package to avoid conflicts.
 
-## Keybindings
+## Commands
 
-- `search-panel:project-show`: <kbd>Cmd/Ctrl+Shift+F</kbd> show project search,
-- `search-panel:show`: <kbd>Cmd/Ctrl+F</kbd> show buffer search,
-- `search-panel:show-replace`: <kbd>Cmd/Ctrl+Alt+F</kbd> show replace controls,
-- `search-panel:find-next`: <kbd>Cmd/Ctrl+G</kbd> or <kbd>F3</kbd> find next match,
-- `search-panel:find-previous`: <kbd>Cmd/Ctrl+Shift+G</kbd> or <kbd>Shift+F3</kbd> find previous match,
-- `search-panel:find-next-selected`: <kbd>Cmd/Ctrl+F3</kbd> find next selected text,
-- `search-panel:find-previous-selected`: <kbd>Cmd/Ctrl+Shift+F3</kbd> find previous selected text,
-- `search-panel:select-all`: <kbd>Alt+F3</kbd> or <kbd>Cmd+Ctrl+G</kbd> select all matches,
-- `search-panel:select-next`: <kbd>Cmd/Ctrl+D</kbd> select next match,
-- `search-panel:select-skip`: <kbd>Cmd/Ctrl+K Cmd/Ctrl+D</kbd> skip current match,
-- `search-panel:confirm`: <kbd>Cmd/Ctrl+Enter</kbd> confirm search,
-- `search-panel:replace-all`: <kbd>Cmd/Ctrl+Enter</kbd> replace all from the replace editor,
-- `search-panel:clear`: <kbd>Cmd/Ctrl+Shift+X</kbd> clear results.
+- `search-panel:project-show`: show project search,
+- `search-panel:show`: show buffer search,
+- `search-panel:show-replace`: show replace controls,
+- `search-panel:find-next`: find next match,
+- `search-panel:find-previous`: find previous match,
+- `search-panel:find-next-selected`: find next selected text,
+- `search-panel:find-previous-selected`: find previous selected text,
+- `search-panel:select-all`: select all matches,
+- `search-panel:select-next`: select next match,
+- `search-panel:select-skip`: skip current match,
+- `search-panel:confirm`: confirm search,
+- `search-panel:replace-all`: replace all from the replace editor,
+- `search-panel:clear`: clear results.
 
 ## Changes from find-and-replace
 

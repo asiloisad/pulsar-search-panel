@@ -2,7 +2,7 @@
   "name": "search-panel",
   "main": "./lib/find",
   "description": "Find and replace in buffers and across the project",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "MIT",
   "activationCommands": {
     "atom-workspace": [

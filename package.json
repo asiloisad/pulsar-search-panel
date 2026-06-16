@@ -49,6 +49,11 @@
       "versions": {
         "1.0.0": "consumeElementIcons"
       }
+    },
+    "search-adapter": {
+      "versions": {
+        "1.0.0": "consumeSearchAdapter"
+      }
     }
   },
   "providedServices": {

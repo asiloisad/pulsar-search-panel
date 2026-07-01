@@ -1,25 +1,24 @@
 'atom-workspace':
   'cmdorctrl-shift-f': 'search-panel:project-show'
   'cmdorctrl-f': 'search-panel:show'
-  'cmdorctrl-alt-f': 'search-panel:show-replace'
 
-'atom-text-editor':
-  'cmdorctrl-g': 'search-panel:find-next'
-  'cmdorctrl-shift-g': 'search-panel:find-previous'
-  'cmd-ctrl-g': 'search-panel:select-all'
-  'cmdorctrl-alt-e': 'search-panel:replace-next'
+'atom-workspace-axis.vertical atom-text-editor':
   'f3': 'search-panel:find-next'
   'shift-f3': 'search-panel:find-previous'
-  'alt-f3': 'search-panel:select-all'
-  'cmdorctrl-f3': 'search-panel:find-next-selected'
-  'cmdorctrl-shift-f3': 'search-panel:find-previous-selected'
-  'cmdorctrl-d': 'search-panel:select-next'
-  'cmdorctrl-e': 'search-panel:use-selection-as-find-pattern'
-  'cmdorctrl-shift-e': 'search-panel:use-selection-as-replace-pattern'
-  'cmdorctrl-u': 'search-panel:select-undo'
-  'cmdorctrl-k cmdorctrl-d': 'search-panel:select-skip'
+  'cmdorctrl-f3': 'search-panel:clear'
+  'shift-f4': 'search-panel:replace-current'
+  'f4': 'search-panel:replace-next'
+  'cmdorctrl-f4': 'search-panel:replace-all'
+  'alt-f': 'search-panel:use-selection-as-replace-pattern'
 
 '.search-panel':
+  'f3': 'search-panel:find-next'
+  'shift-f3': 'search-panel:find-previous'
+  'cmdorctrl-f3': 'search-panel:clear'
+  'shift-f4': 'search-panel:replace-current'
+  'f4': 'search-panel:replace-next'
+  'cmdorctrl-f4': 'search-panel:replace-all'
+  'alt-f': 'search-panel:use-selection-as-replace-pattern'
   'shift-enter': 'search-panel:show-previous'
   'cmdorctrl-enter': 'search-panel:confirm'
   'alt-enter': 'search-panel:find-all'
@@ -30,6 +29,9 @@
   'ctrl-shift-c': 'search-panel:toggle-case-option'
 
 '.search-panel-project':
+  'cmdorctrl-f3': 'search-panel:clear'
+  'cmdorctrl-f4': 'search-panel:project-replace-all'
+  'alt-f': 'search-panel:use-selection-as-replace-pattern'
   'cmdorctrl-enter': 'search-panel:project-confirm'
   'cmdorctrl-alt-/': 'search-panel:project-toggle-regex-option'
   'cmdorctrl-alt-c': 'search-panel:project-toggle-case-option'
